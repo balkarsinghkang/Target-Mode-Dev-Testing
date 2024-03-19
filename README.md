@@ -15,9 +15,13 @@ This will return an array of results, one string for the output of each command.
 following block style usage returns the same results, though some may prefer it:
 
 output = cisco.run do |x|
+
 	x.cmd("sh ver")
+
 	x.enable("enablepass")
+
 	x.cmd("sh run")
+
 end
 
 
