@@ -2,9 +2,13 @@
 Here are a few examples of how to use the custom resources for Cisco commands
 
 cisco = Cisco::Base.new(:host => "10.0.0.1", :user => "admin", :password => "accesspass", :transport => :ssh)
+
 cisco.cmd("sh ver")
+
 cisco.enable("enablepass")
+
 cisco.cmd("sh run")
+
 output = cisco.run
 
 This will return an array of results, one string for the output of each command. The

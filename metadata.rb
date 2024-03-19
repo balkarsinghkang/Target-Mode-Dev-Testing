@@ -1,6 +1,6 @@
 name 'tmt'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Balkar Singh Kang'
+maintainer_email 'balkar.singh@progress.com'
 license 'All Rights Reserved'
 description 'Installs/Configures tmt'
 version '0.1.0'
