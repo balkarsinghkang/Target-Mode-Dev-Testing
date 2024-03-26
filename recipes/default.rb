@@ -4,8 +4,7 @@
 #
 # Copyright:: 2024, The Authors, All Rights Reserved.
 
-chef_gem 'cisco_node_utils' 
-do
+chef_gem 'cisco_node_utils' do
    source '/roor/cisco_node_utils-2.1.1.gem'
 end
 
