@@ -1,3 +1,7 @@
+https://www.rubydoc.info/gems/cisco_node_utils/2.1.0
+https://github.com/cisco/cisco-network-chef-cookbook
+https://supermarket.chef.io/cookbooks/cisco-cookbook
+
 
 Here are a few examples of how to use the custom resources for Cisco commands
 

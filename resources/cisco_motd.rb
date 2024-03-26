@@ -45,6 +45,11 @@ action :set do
   cisco.cmd("banner motd # #{new_resource.motd} #")
   cisco.cmd('exit')
   output = cisco.run
+
+  enable
+  conf t
+int 1
+ip addree 
   # Chef::Log.info('This resource is always updated')
   # end
   # updated_by_last_action true
