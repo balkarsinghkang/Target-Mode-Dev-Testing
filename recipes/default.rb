@@ -5,9 +5,9 @@
 # Copyright:: 2024, The Authors, All Rights Reserved.
 
 chef_gem 'cisco_node_utils' 
-# do
-#   source '/Users/balkarsinghkang/Downloads/cisco_node_utils-2.1.0.gem'
-# end
+do
+   source '/roor/cisco_node_utils-2.1.1.gem'
+end
 
 
 cisco_motd '192.168.240.5' do
