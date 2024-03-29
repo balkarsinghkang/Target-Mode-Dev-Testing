@@ -1,6 +1,6 @@
 require 'base64' unless defined?(Base64)
 
-module TargetModeHelper
+module TargetModeHelperOld
   class TargetModeHelperClass
     def empty(x)
       (!x.nil? and x.strip.empty?)
@@ -39,5 +39,3 @@ module TargetModeHelper
     end
   end
 end
-
-Chef::DSL::Recipe.send(:include, TargetModeHelper)

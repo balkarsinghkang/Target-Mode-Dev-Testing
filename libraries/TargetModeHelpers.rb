@@ -71,3 +71,4 @@ end
 #       variables specific_key: my_helper_method
 #     end
 #
+Chef::DSL::Recipe.send(:include, TargetModeHelper)
