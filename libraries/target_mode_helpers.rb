@@ -37,3 +37,4 @@ class TargetModeHelper
     @backend.run_command(unix_cmd).stdout
   end
 end
+Chef::DSL::Recipe.send(:include, TargetModeHelper)
