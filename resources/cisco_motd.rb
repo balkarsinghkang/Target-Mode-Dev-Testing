@@ -1,5 +1,5 @@
 require 'cisco_node_utils'
-require 'TargetModeHelper'
+require 'TargetModeHelpers'
 # unless defined?(TargetModeHelper)
 require 'pry'
 
