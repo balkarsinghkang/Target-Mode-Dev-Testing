@@ -9,8 +9,8 @@ chef_gem 'cisco_node_utils' do
 end
 
 cisco_motd '192.168.240.5' do
-  username 'admin'
-  password 'Training'
-  enable_password 'Training'
+  # username 'admin'
+  # password 'Training'
+  # enable_password 'Training'
   motd 'Configured via Chef recipe Balkar'
 end
