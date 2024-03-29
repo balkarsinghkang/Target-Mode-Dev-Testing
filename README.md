@@ -3,6 +3,21 @@ https://github.com/cisco/cisco-network-chef-cookbook
 https://supermarket.chef.io/cookbooks/cisco-cookbook
 
 
+username admin2 privilege 7 secret  Training
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local
+line vty 0 4
+ privilege level 15
+ transport input ssh
+line vty 5 15
+ privilege level 15
+ transport input ssh
+
+
+
 Here are a few examples of how to use the custom resources for Cisco commands
 
 cisco = Cisco::Base.new(:host => "10.0.0.1", :user => "admin", :password => "accesspass", :transport => :ssh)
