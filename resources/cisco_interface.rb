@@ -19,4 +19,4 @@ property :ipaddress, String, required: true
 action :set do
   client1 = Cisco::Client.create()
   env = { host: new_resource.target, port: nil, username: new_resource.username, password: new_resource.password, cookie: nil }
-
+end
