@@ -13,7 +13,7 @@ module TargetModeHelpers
   # Define the methods that you would like to assist the work you do in recipes,
   # resources, or templates.
   #
-  class TargetModeHelperClass
+  class TargetModeHelper
     def empty(x)
       (!x.nil? and x.strip.empty?)
     end
