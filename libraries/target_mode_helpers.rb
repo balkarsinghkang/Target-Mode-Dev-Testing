@@ -39,4 +39,5 @@ module TargetModeHelper
     end
   end
 end
+
 Chef::DSL::Recipe.send(:include, TargetModeHelper)
