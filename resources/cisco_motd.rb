@@ -4,7 +4,7 @@ require_relative '../libraries/TargetModeHelpers'
 require 'pry'
 
 resource_name :cisco_motd
-provides :cisco_motd # , target_mode: true
+provides :cisco_motd, target_mode: true
 unified_mode true
 default_action :set
 
