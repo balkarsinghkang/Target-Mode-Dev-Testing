@@ -20,6 +20,7 @@ module TargetModeHelpers
 
     def initialize(backend)
       @backend = backend
+      puts "__transport_connection: #{@backend.__transport_connection}"
     end
 
     def run_command(command, *args, debug: false)
