@@ -14,20 +14,6 @@ property :target, String, name_property: true
 # property :enable_password, String, required: true
 property :motd, String, required: true
 
-#     if cfg.interfaces.has_key?(new_resource.name)
-#       iface = cfg.interfaces[new_resource.name]
-
-#       name        iface.option['name']        if iface.option.has_key?('name')
-#       type        iface.option['type']        if iface.option.has_key?('type')
-#       ifname      iface.option['ifname']      if iface.option.has_key?('ifname')
-#       proto       iface.option['proto']       if iface.option.has_key?('proto')
-#       ipaddress   iface.option['ipaddr']      if iface.option.has_key?('ipaddr')
-#       netmask     iface.option['netmask']     if iface.option.has_key?('netmask')
-#       gateway     iface.option['gateway']     if iface.option.has_key?('gateway')
-
-#     end
-#   end
-
 action :set do
   converge_if_changed do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
