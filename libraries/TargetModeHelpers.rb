@@ -8,6 +8,8 @@
 # single word that starts with a capital letter and then continues to use
 # camel-casing throughout the remainder of the name.
 #
+require 'base64' unless defined?(Base64)
+
 module TargetModeHelpers
   #
   # Define the methods that you would like to assist the work you do in recipes,
@@ -20,7 +22,12 @@ module TargetModeHelpers
 
     def initialize(backend)
       @backend = backend
-      puts "__transport_connection: #{@backend.__transport_connection}"
+      if @backend.nil?
+        puts "@backend is nil"
+      else
+        puts "@backend is not nil"
+      end
+      # puts "__transport_connection: #{@backend.__transport_connection}"
     end
 
     def run_command(command, *args, debug: false)
