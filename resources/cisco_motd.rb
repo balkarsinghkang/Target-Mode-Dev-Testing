@@ -31,7 +31,7 @@ property :motd, String, required: true
 
 action :set do
   converge_if_changed do
-    backend = TargetModeHelper.new(__transport_connection)
+    backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     src = backend.run_command('sh run')
     binding.pry
 
