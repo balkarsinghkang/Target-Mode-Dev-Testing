@@ -22,11 +22,6 @@ module TargetModeHelpers
 
     def initialize(backend)
       @backend = backend
-      if @backend.nil?
-        puts "@backend is nil"
-      else
-        puts "@backend is not nil"
-      end
       # puts "__transport_connection: #{@backend.__transport_connection}"
     end
 
