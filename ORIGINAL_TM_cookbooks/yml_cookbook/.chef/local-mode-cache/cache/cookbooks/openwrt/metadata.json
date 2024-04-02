@@ -1,0 +1,36 @@
+{
+  "name": "openwrt",
+  "description": "Installs/Configures openwrt",
+  "long_description": "",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "providing": {
+    "openwrt": ">= 0.0.0"
+  },
+  "recipes": {
+    "openwrt": ""
+  },
+  "version": "0.1.0",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 16.0"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ],
+  "eager_load_libraries": true
+}

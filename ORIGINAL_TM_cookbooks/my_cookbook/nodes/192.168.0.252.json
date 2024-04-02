@@ -1,0 +1,1226 @@
+{
+  "name": "192.168.0.252",
+  "chef_environment": "local",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "audit": {
+      "inspec_backend_cache": true,
+      "reporter": null,
+      "fetcher": null,
+      "insecure": null,
+      "quiet": true,
+      "profiles": {
+
+      },
+      "inputs": {
+
+      },
+      "attributes": {
+
+      },
+      "waiver_file": null,
+      "json_file": {
+        "location": "/Users/apravati/.chef/compliance_reports/compliance-20230907134313.json"
+      },
+      "run_time_limit": 1.0,
+      "result_message_limit": 10000,
+      "result_include_backtrace": false,
+      "control_results_limit": 50,
+      "chef_node_attribute_enabled": true,
+      "compliance_phase": false,
+      "interval": {
+        "enabled": false,
+        "time": 1440
+      }
+    }
+  },
+  "automatic": {
+    "kernel": {
+      "name": "Linux",
+      "release": "4.14.221",
+      "version": "#0 SMP Mon Feb 15 15:22:37 2021",
+      "machine": "x86_64",
+      "processor": "unknown",
+      "os": "GNU/Linux",
+      "modules": {
+        "bnx2": {
+          "size": "69632",
+          "refcount": "0"
+        },
+        "button_hotplug": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "crc_ccitt": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "e1000": {
+          "size": "90112",
+          "refcount": "0"
+        },
+        "e1000e": {
+          "size": "147456",
+          "refcount": "0"
+        },
+        "i2c_dev": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "igb": {
+          "size": "131072",
+          "refcount": "0"
+        },
+        "ip_tables": {
+          "size": "16384",
+          "refcount": "4"
+        },
+        "ip6_tables": {
+          "size": "16384",
+          "refcount": "24"
+        },
+        "ip6t_REJECT": {
+          "size": "12288",
+          "refcount": "2"
+        },
+        "ip6table_filter": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "ip6table_mangle": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "ipt_MASQUERADE": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "ipt_REJECT": {
+          "size": "12288",
+          "refcount": "2"
+        },
+        "iptable_filter": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "iptable_mangle": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "iptable_nat": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "mii": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_conntrack": {
+          "size": "65536",
+          "refcount": "13"
+        },
+        "nf_conntrack_ipv4": {
+          "size": "12288",
+          "refcount": "11"
+        },
+        "nf_conntrack_ipv6": {
+          "size": "12288",
+          "refcount": "5"
+        },
+        "nf_conntrack_rtcache": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "nf_defrag_ipv4": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_defrag_ipv6": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_flow_table": {
+          "size": "20480",
+          "refcount": "2"
+        },
+        "nf_flow_table_hw": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_log_common": {
+          "size": "12288",
+          "refcount": "2"
+        },
+        "nf_log_ipv4": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "nf_log_ipv6": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "nf_nat": {
+          "size": "20480",
+          "refcount": "4"
+        },
+        "nf_nat_ipv4": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_nat_masquerade_ipv4": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_nat_redirect": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_reject_ipv4": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "nf_reject_ipv6": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "ppp_async": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "ppp_generic": {
+          "size": "28672",
+          "refcount": "3"
+        },
+        "pppoe": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "pppox": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "pps_core": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "ptp": {
+          "size": "16384",
+          "refcount": "2"
+        },
+        "r8169": {
+          "size": "65536",
+          "refcount": "0"
+        },
+        "slhc": {
+          "size": "12288",
+          "refcount": "1"
+        },
+        "x_tables": {
+          "size": "20480",
+          "refcount": "24"
+        },
+        "xt_CT": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_FLOWOFFLOAD": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_LOG": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_REDIRECT": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_TCPMSS": {
+          "size": "12288",
+          "refcount": "4"
+        },
+        "xt_conntrack": {
+          "size": "12288",
+          "refcount": "14"
+        },
+        "xt_limit": {
+          "size": "12288",
+          "refcount": "20"
+        },
+        "xt_mac": {
+          "size": "8192",
+          "refcount": "0"
+        },
+        "xt_mark": {
+          "size": "8192",
+          "refcount": "0"
+        },
+        "xt_multiport": {
+          "size": "8192",
+          "refcount": "0"
+        },
+        "xt_nat": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_state": {
+          "size": "12288",
+          "refcount": "0"
+        },
+        "xt_tcpudp": {
+          "size": "8192",
+          "refcount": "10"
+        },
+        "xt_time": {
+          "size": "12288",
+          "refcount": "0"
+        }
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "0kB",
+        "free": "0kB"
+      },
+      "hugepages": {
+
+      },
+      "directmap": {
+        "4k": "26560kB",
+        "2M": "497664kB"
+      },
+      "total": "501396kB",
+      "free": "472228kB",
+      "available": "450608kB",
+      "buffers": "872kB",
+      "cached": "6384kB",
+      "active": "8056kB",
+      "inactive": "1108kB",
+      "dirty": "0kB",
+      "writeback": "0kB",
+      "anon_pages": "1944kB",
+      "mapped": "2068kB",
+      "slab": "9208kB",
+      "slab_reclaimable": "2640kB",
+      "slab_unreclaim": "6568kB",
+      "page_tables": "260kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "250696kB",
+      "committed_as": "4200kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "0kB",
+      "vmalloc_chunk": "0kB"
+    },
+    "network": {
+      "interfaces": {
+        "br-lan": {
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:8D:5B:1F": {
+              "family": "lladdr"
+            },
+            "192.168.0.252": {
+              "family": "inet",
+              "broadcast": "192.168.0.255",
+              "netmask": "255.255.255.0"
+            },
+            "fe80::a00:27ff:fe8d:5b1f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            },
+            "fdef:67aa:553f::1": {
+              "family": "inet6",
+              "prefixlen": "60",
+              "scope": "Global"
+            },
+            "fd64:9fa1:3dc9:4::1": {
+              "family": "inet6",
+              "prefixlen": "62",
+              "scope": "Global"
+            }
+          },
+          "flags": [
+            "UP",
+            "BROADCAST",
+            "RUNNING",
+            "MULTICAST"
+          ],
+          "mtu": "1500"
+        },
+        "eth0": {
+          "type": "eth",
+          "number": "0",
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:8D:5B:1F": {
+              "family": "lladdr"
+            }
+          },
+          "flags": [
+            "UP",
+            "BROADCAST",
+            "RUNNING",
+            "MULTICAST"
+          ],
+          "mtu": "1500"
+        },
+        "eth1": {
+          "type": "eth",
+          "number": "1",
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:BE:8A:4F": {
+              "family": "lladdr"
+            },
+            "192.168.0.235": {
+              "family": "inet",
+              "broadcast": "192.168.0.255",
+              "netmask": "255.255.255.0"
+            },
+            "fd64:9fa1:3dc9:1::53a": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Global"
+            },
+            "fd64:9fa1:3dc9:1:a00:27ff:febe:8a4f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Global"
+            },
+            "fdef:67aa:553f:0:a00:27ff:febe:8a4f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Global"
+            },
+            "fd64:9fa1:3dc9::53a": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Global"
+            },
+            "fd64:9fa1:3dc9:0:a00:27ff:febe:8a4f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Global"
+            },
+            "fd64:9fa1:3dc9:4:a00:27ff:febe:8a4f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Global"
+            },
+            "fe80::a00:27ff:febe:8a4f": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "flags": [
+            "UP",
+            "BROADCAST",
+            "RUNNING",
+            "MULTICAST"
+          ],
+          "mtu": "1500"
+        },
+        "lo": {
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "netmask": "255.0.0.0"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "flags": [
+            "UP",
+            "LOOPBACK",
+            "RUNNING"
+          ],
+          "mtu": "65536"
+        }
+      },
+      "default_gateway": "192.168.0.1",
+      "default_interface": "eth1"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "br-lan": {
+            "rx": {
+              "packets": "10581",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "frame": "0",
+              "bytes": "1968422"
+            },
+            "tx": {
+              "packets": "4308",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "carrier": "0",
+              "collisions": "0",
+              "queuelen": "1000",
+              "bytes": "1488830"
+            }
+          },
+          "eth0": {
+            "rx": {
+              "packets": "10589",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "frame": "0",
+              "bytes": "2118070"
+            },
+            "tx": {
+              "packets": "4649",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "carrier": "0",
+              "collisions": "0",
+              "queuelen": "1000",
+              "bytes": "1689538"
+            }
+          },
+          "eth1": {
+            "rx": {
+              "packets": "4234",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "frame": "0",
+              "bytes": "413052"
+            },
+            "tx": {
+              "packets": "2537",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "carrier": "0",
+              "collisions": "0",
+              "queuelen": "1000",
+              "bytes": "224720"
+            }
+          },
+          "lo": {
+            "rx": {
+              "packets": "298",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "frame": "0",
+              "bytes": "30265"
+            },
+            "tx": {
+              "packets": "298",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0",
+              "carrier": "0",
+              "collisions": "0",
+              "queuelen": "1000",
+              "bytes": "30265"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "192.168.0.235",
+    "macaddress": "08:00:27:BE:8A:4F",
+    "ip6address": "fd64:9fa1:3dc9::53a",
+    "lsb": {
+
+    },
+    "os": "linux",
+    "os_version": "4.14.221",
+    "platform": "openwrt",
+    "platform_version": "19.07.7",
+    "platform_family": null,
+    "uptime_seconds": 7714,
+    "uptime": "2 hours 08 minutes 34 seconds",
+    "idletime_seconds": 1664,
+    "idletime": "27 minutes 44 seconds",
+    "dmi": {
+
+    },
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "158",
+        "model_name": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "stepping": "10",
+        "mhz": "2594.922",
+        "cache_size": "12288 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "2",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ht",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "rep_good",
+          "nopl",
+          "xtopology",
+          "nonstop_tsc",
+          "cpuid",
+          "tsc_known_freq",
+          "pni",
+          "pclmulqdq",
+          "ssse3",
+          "cx16",
+          "pcid",
+          "sse4_1",
+          "sse4_2",
+          "x2apic",
+          "movbe",
+          "popcnt",
+          "aes",
+          "xsave",
+          "avx",
+          "rdrand",
+          "hypervisor",
+          "lahf_lm",
+          "abm",
+          "3dnowprefetch",
+          "invpcid_single",
+          "pti",
+          "fsgsbase",
+          "bmi1",
+          "avx2",
+          "bmi2",
+          "invpcid",
+          "rdseed",
+          "clflushopt",
+          "md_clear",
+          "flush_l1d",
+          "arch_capabilities"
+        ]
+      },
+      "1": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "158",
+        "model_name": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "stepping": "10",
+        "mhz": "2594.922",
+        "cache_size": "12288 KB",
+        "physical_id": "0",
+        "core_id": "1",
+        "cores": "2",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ht",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "rep_good",
+          "nopl",
+          "xtopology",
+          "nonstop_tsc",
+          "cpuid",
+          "tsc_known_freq",
+          "pni",
+          "pclmulqdq",
+          "ssse3",
+          "cx16",
+          "pcid",
+          "sse4_1",
+          "sse4_2",
+          "x2apic",
+          "movbe",
+          "popcnt",
+          "aes",
+          "xsave",
+          "avx",
+          "rdrand",
+          "hypervisor",
+          "lahf_lm",
+          "abm",
+          "3dnowprefetch",
+          "invpcid_single",
+          "pti",
+          "fsgsbase",
+          "bmi1",
+          "avx2",
+          "bmi2",
+          "invpcid",
+          "rdseed",
+          "clflushopt",
+          "md_clear",
+          "flush_l1d",
+          "arch_capabilities"
+        ]
+      },
+      "real": 1,
+      "cores": 2,
+      "total": 2
+    },
+    "virtualization": {
+      "systems": {
+
+      }
+    },
+    "languages": {
+      "lua": {
+        "version": "5.1.5"
+      },
+      "ruby": {
+
+      }
+    },
+    "chef_packages": {
+      "chef": {
+        "version": "17.10.0",
+        "chef_root": "/opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/chef-17.10.0/lib",
+        "chef_effortless": null
+      },
+      "ohai": {
+        "version": "17.9.0",
+        "ohai_root": "/opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/ohai-17.9.0/lib/ohai"
+      }
+    },
+    "hostname": "",
+    "machinename": "",
+    "fqdn": null,
+    "domain": null,
+    "cloud": null,
+    "command": {
+      "ps": "ps -ef"
+    },
+    "filesystem": {
+      "by_device": {
+        "/dev/root": {
+          "kb_size": "258016",
+          "kb_used": "12780",
+          "kb_available": "239996",
+          "percent_used": "5%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "mounts": [
+            "/"
+          ]
+        },
+        "tmpfs": {
+          "kb_size": "512",
+          "kb_used": "0",
+          "kb_available": "512",
+          "percent_used": "0%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "relatime",
+            "size=512k",
+            "mode=755"
+          ],
+          "mounts": [
+            "/tmp",
+            "/dev"
+          ]
+        },
+        "/dev/sda1": {
+          "kb_size": "16112",
+          "kb_used": "3880",
+          "kb_available": "11908",
+          "percent_used": "25%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "mounts": [
+            "/boot"
+          ]
+        },
+        "proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ],
+          "mounts": [
+            "/proc"
+          ]
+        },
+        "sysfs": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ],
+          "mounts": [
+            "/sys"
+          ]
+        },
+        "devpts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "mode=600",
+            "ptmxmode=000"
+          ],
+          "mounts": [
+            "/dev/pts"
+          ]
+        },
+        "debugfs": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "mounts": [
+            "/sys/kernel/debug"
+          ]
+        }
+      },
+      "by_mountpoint": {
+        "/": {
+          "kb_size": "258016",
+          "kb_used": "12780",
+          "kb_available": "239996",
+          "percent_used": "5%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "devices": [
+            "/dev/root"
+          ]
+        },
+        "/tmp": {
+          "kb_size": "250696",
+          "kb_used": "256",
+          "kb_available": "250440",
+          "percent_used": "0%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noatime"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/boot": {
+          "kb_size": "16112",
+          "kb_used": "3880",
+          "kb_available": "11908",
+          "percent_used": "25%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "devices": [
+            "/dev/sda1"
+          ]
+        },
+        "/dev": {
+          "kb_size": "512",
+          "kb_used": "0",
+          "kb_available": "512",
+          "percent_used": "0%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "relatime",
+            "size=512k",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ],
+          "devices": [
+            "proc"
+          ]
+        },
+        "/sys": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ],
+          "devices": [
+            "sysfs"
+          ]
+        },
+        "/dev/pts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "mode=600",
+            "ptmxmode=000"
+          ],
+          "devices": [
+            "devpts"
+          ]
+        },
+        "/sys/kernel/debug": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ],
+          "devices": [
+            "debugfs"
+          ]
+        }
+      },
+      "by_pair": {
+        "/dev/root,/": {
+          "device": "/dev/root",
+          "kb_size": "258016",
+          "kb_used": "12780",
+          "kb_available": "239996",
+          "percent_used": "5%",
+          "mount": "/",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ]
+        },
+        "tmpfs,/tmp": {
+          "device": "tmpfs",
+          "kb_size": "250696",
+          "kb_used": "256",
+          "kb_available": "250440",
+          "percent_used": "0%",
+          "mount": "/tmp",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noatime"
+          ]
+        },
+        "/dev/sda1,/boot": {
+          "device": "/dev/sda1",
+          "kb_size": "16112",
+          "kb_used": "3880",
+          "kb_available": "11908",
+          "percent_used": "25%",
+          "mount": "/boot",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ]
+        },
+        "tmpfs,/dev": {
+          "device": "tmpfs",
+          "kb_size": "512",
+          "kb_used": "0",
+          "kb_available": "512",
+          "percent_used": "0%",
+          "mount": "/dev",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "relatime",
+            "size=512k",
+            "mode=755"
+          ]
+        },
+        "proc,/proc": {
+          "device": "proc",
+          "mount": "/proc",
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ]
+        },
+        "sysfs,/sys": {
+          "device": "sysfs",
+          "mount": "/sys",
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "noatime"
+          ]
+        },
+        "devpts,/dev/pts": {
+          "device": "devpts",
+          "mount": "/dev/pts",
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "mode=600",
+            "ptmxmode=000"
+          ]
+        },
+        "debugfs,/sys/kernel/debug": {
+          "device": "debugfs",
+          "mount": "/sys/kernel/debug",
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "noatime"
+          ]
+        }
+      }
+    },
+    "fips": {
+      "kernel": {
+        "enabled": false
+      }
+    },
+    "init_package": "procd",
+    "keys": {
+      "ssh": {
+
+      }
+    },
+    "block_device": {
+      "loop0": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop1": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop2": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop3": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop4": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop5": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop6": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop7": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "sda": {
+        "size": "558080",
+        "removable": "0",
+        "model": "VBOX HARDDISK",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "ATA",
+        "queue_depth": "1",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      }
+    },
+    "hostnamectl": {
+
+    },
+    "os_release": {
+      "name": "OpenWrt",
+      "version": "19.07.7",
+      "id": "openwrt",
+      "id_like": [
+        "lede",
+        "openwrt"
+      ],
+      "pretty_name": "OpenWrt 19.07.7",
+      "version_id": "19.07.7",
+      "home_url": "https://openwrt.org/",
+      "bug_url": "https://bugs.openwrt.org/",
+      "support_url": "https://forum.openwrt.org/",
+      "build_id": "r11306-c4a6851c72",
+      "openwrt_board": "x86/64",
+      "openwrt_arch": "x86_64",
+      "openwrt_taints": "",
+      "openwrt_device_manufacturer": "OpenWrt",
+      "openwrt_device_manufacturer_url": "https://openwrt.org/",
+      "openwrt_device_product": "Generic",
+      "openwrt_device_revision": "v0",
+      "openwrt_release": "OpenWrt 19.07.7 r11306-c4a6851c72"
+    },
+    "ohai_time": 1694094247.2118132,
+    "packages": {
+
+    },
+    "root_group": "wheel",
+    "shells": [
+      "/bin/ash"
+    ],
+    "time": {
+      "timezone": "IST"
+    },
+    "train": {
+      "family_hierarchy": [
+        "linux",
+        "unix",
+        "os"
+      ],
+      "family": "linux",
+      "platform": {
+        "arch": "x86_64"
+      },
+      "backend": "unknown",
+      "scheme": "ssh",
+      "uri": "ssh://root@192.168.0.252:22"
+    },
+    "chef_guid": "583e6e64-36ea-4170-b9e4-e1d66917c47d",
+    "name": "192.168.0.252",
+    "chef_environment": "local",
+    "policy_revision": "0026b5ac99b18d56ad7d8d6211f4ffbb8375a70745ab599777a2b5a56f56f97b",
+    "roles": [
+
+    ],
+    "recipes": [
+      "openwrt::default"
+    ],
+    "policy_name": "openwrt",
+    "policy_group": "local",
+    "cookbooks": {
+      "openwrt": {
+        "version": "0.1.0"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[openwrt::default]"
+  ],
+  "policy_name": "openwrt",
+  "policy_group": "local"
+}

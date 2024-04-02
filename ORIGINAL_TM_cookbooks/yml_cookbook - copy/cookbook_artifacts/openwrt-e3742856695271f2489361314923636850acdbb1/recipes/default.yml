@@ -1,0 +1,42 @@
+
+# Cookbook:: openwrt
+# Recipe:: default
+
+resources:
+- type: "openwrt_directory" 
+  name: "~/scripts"
+  action:
+  - create
+
+openwrt_package 'base64' do
+  package 'coreutils-base64'
+end
+
+openwrt_system_config '/etc/config/system' do
+  hostname 'OpenWrt'
+  conloglevel '7'
+end
+
+openwrt_network_interface 'lan' do
+  type 'bridge'
+  ifname 'eth0'
+  proto 'static'
+  ipaddress '192.168.0.252'
+  netmask '255.255.255.0'
+  gateway '192.168.0.1'
+end
+
+openwrt_uci_firewall 'BlockFTP' do
+  src 'wan'
+  dest  'lan'
+  dest_port     '21'
+  target 'REJECT'
+end
+
+openwrt_uci_apply 'commit' do
+end
+
+openwrt_reboot 'reboot' do
+  delay 10
+end
+

@@ -1,0 +1,17 @@
+Generated at 2023-09-08 15:26:30 +0530
+NoMethodError: undefined method `[]' for nil:NilClass
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-config-18.2.7/lib/chef-config/mixin/train_transport.rb:115:in `build_transport'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/run_context.rb:666:in `transport'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/run_context.rb:674:in `transport_connection'
+/opt/chef/embedded/lib/ruby/3.1.0/forwardable.rb:238:in `transport_connection'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/client.rb:601:in `run_ohai'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/client.rb:269:in `run'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/application.rb:305:in `run_with_graceful_exit_option'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/application.rb:281:in `block in run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/local_mode.rb:42:in `with_server_connectivity'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/application.rb:264:in `run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/application/base.rb:352:in `run_application'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-18.2.7/lib/chef/application.rb:67:in `run'
+/opt/chef/embedded/lib/ruby/gems/3.1.0/gems/chef-bin-18.2.7/bin/chef-client:25:in `<top (required)>'
+/usr/local/bin/chef-client:180:in `load'
+/usr/local/bin/chef-client:180:in `<main>'

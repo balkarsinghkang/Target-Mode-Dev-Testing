@@ -1,0 +1,4 @@
+-t ssh://root@192.168.0.251 --password 123456 --reporter cli:logs/results.out
+
+# -t ssh://root@192.168.0.252 --password 123456 --reporter cli:logs/2-results.out
+

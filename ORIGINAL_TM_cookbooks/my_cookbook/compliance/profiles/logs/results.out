@@ -1,0 +1,14 @@
+
+Profile:   check_firewall (firewall)
+Version:   0.1.0
+Target:    ssh://root@192.168.0.251:22
+Target ID: 
+
+  ↺  check_HTTPS_firewall: check_firewall
+     ↺  Skipped control due to only_if condition.
+  ↺  check_NTP_firewall: check_firewall
+     ↺  Skipped control due to only_if condition.
+
+
+Profile Summary: 0 successful controls, 0 control failures, 2 controls skipped
+Test Summary: 0 successful, 0 failures, 2 skipped

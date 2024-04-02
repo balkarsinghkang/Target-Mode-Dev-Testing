@@ -1,0 +1,4 @@
+-t ssh://root@192.168.0.251 --password <%=ENV["OpenWRT_Secret"]%> --reporter cli:logs/ruby-results.out
+
+-t ssh://root@192.168.0.252 --password <%=ENV["OpenWRT_Secret"]%> --reporter cli:logs/yml-results.out
+

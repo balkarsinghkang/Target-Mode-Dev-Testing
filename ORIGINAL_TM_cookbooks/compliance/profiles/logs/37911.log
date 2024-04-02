@@ -1,0 +1,5 @@
+2023-09-08T15:57:47+05:30 Start Time: 2023-09-08 15:57:47 +0530
+2023-09-08T15:57:47+05:30 Arguments: firewall -t ssh://root@192.168.0.252 --password 123456 --reporter child-status cli:logs/yml-results.out --winrm-transport negotiate --insecure false --winrm-shell-type powershell --auto-install-gems false --distinct-exit true --diff true --sort-results-by file --filter-empty-profiles false --reporter-include-source false
+2023-09-08T15:57:53+05:30 Extra log: [2023-09-08T15:57:53+05:30] WARN: Cannot find a UUID for your node.
+
+2023-09-08T15:57:53+05:30 Exit code: pid 37911 exit 0

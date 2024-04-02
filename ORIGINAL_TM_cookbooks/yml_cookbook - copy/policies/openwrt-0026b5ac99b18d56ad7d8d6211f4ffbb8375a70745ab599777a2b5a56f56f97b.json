@@ -1,0 +1,51 @@
+{
+  "revision_id": "0026b5ac99b18d56ad7d8d6211f4ffbb8375a70745ab599777a2b5a56f56f97b",
+  "name": "openwrt",
+  "run_list": [
+    "recipe[openwrt::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "openwrt": {
+      "version": "0.1.0",
+      "identifier": "e3742856695271f2489361314923636850acdbb1",
+      "dotted_decimal_identifier": "64022536310575729.68196742191991075.109299681254321",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "60ef9a32a743b7706a5df1f1a8ace248eef13b71",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "openwrt",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "openwrt (0.1.0)": [
+
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+---
+
+resources:
+- type: "openwrt_directory"
+  name: "IP_Details" 
+  directory: "~/ip_details"
+  action: create
+
+- type: "openwrt_download"
+  name: "my ip"
+  source: "http://api.ipify.org"
+  target: "~/ip_details/ip.txt"
+  action: create
+
+- type: "openwrt_package"
+  name: "base64"
+  package: "coreutils-base64"
+
+- type: "openwrt_uci_firewall"
+  name: "Block-FTP"
+  src: "wan"
+  dest: "lan"
+  dest_port: "21"
+  target: "REJECT"
+
+- type: "openwrt_uci_firewall"
+  name: "Allow-HTTPS"
+  src: "wan" 
+  dest: "lan"
+  dest_port: "443"
+  proto: "TLS"
+  target: "ACCEPT"
+
+- type: "openwrt_network_route"
+  name: "VLAN-1"
+  interface: "lan"
+  target: "192.168.0.244"
+  gateway: "192.168.0.252"
+
+- type: "openwrt_uci_apply"
+  name: "commit"
+  
+- type: "openwrt_reboot"
+  name: "Reboot"
+  delay: 10 
+      

@@ -1,0 +1,19 @@
+
+Profile:   check_firewall (firewall)
+Version:   0.1.0
+Target:    ssh://root@192.168.0.252:22
+Target ID: 
+
+  ✔  ************ 1-check_HTTPS_firewall ************: check_firewall
+     ✔  File /etc/config/firewall content is expected to match /option name 'Allow-HTTPS'/
+     ✔  File /etc/config/firewall content is expected to match /option dest_port '443'/
+     ✔  File /etc/config/firewall content is expected to match /option proto 'TLS'/
+  ✔  ************ 2-check_for_file ************: check_firewall
+     ✔  File /root/ip_details/ip.txt is expected to exist
+  ✔  ************ 3-check_FTP_firewall ************: check_firewall
+     ✔  File /etc/config/firewall content is expected to match /option name 'Block-FTP'/
+     ✔  File /etc/config/firewall content is expected to match /option dest_port '21'/
+
+
+Profile Summary: 3 successful controls, 0 control failures, 0 controls skipped
+Test Summary: 6 successful, 0 failures, 0 skipped
