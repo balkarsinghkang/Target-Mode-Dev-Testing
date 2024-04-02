@@ -32,8 +32,8 @@ property :motd, String, required: true
 action :set do
   converge_if_changed do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    src = backend.run_command('sh run')
     binding.pry
+    src = backend.run_command('sh run')
 
     # cfg = OpenWRT::Config::Network.new(content: src)
     # ruby_block 'always_updated' do
