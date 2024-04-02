@@ -1,8 +1,12 @@
+Target Mode Link: https://chefio.atlassian.net/wiki/spaces/~5ec4d1fdde8fe30c44a98c26/pages/2864381992/Target+Mode
+
 https://www.rubydoc.info/gems/cisco_node_utils/2.1.0
 https://github.com/cisco/cisco-network-chef-cookbook
 https://supermarket.chef.io/cookbooks/cisco-cookbook
 
-
+login with admin
+enable
+conf t
 username admin2 privilege 7 secret  Training
 aaa new-model
 !
@@ -15,8 +19,13 @@ line vty 0 4
 line vty 5 15
  privilege level 15
  transport input ssh
+exit
+exit
+wr mem
+exit
 
-
+login with the following to get into enable mode
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 admin2@192.168.240.5
 
 Here are a few examples of how to use the custom resources for Cisco commands
 
