@@ -58,3 +58,17 @@ You can also pass an array of direct arguments that are used to instantiate the 
 This is useful, if for instance, you want to use public key authentication with SSH:
 
 cisco = Cisco::Base.new(:directargs => ["10.0.0.1", "admin", :auth_methods => ["publickey"]])
+
+
+Known Errors
+#1
+Error
+FATAL: ArgumentError: Cannot find a platform for node[ciscoswitch]
+FATAL: ArgumentError: Cannot find a version for node[ciscoswitch]
+Fix
+vi /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/chef-17.6.18/lib/chef/platform/provider_mapping.rb
+ 39         platform = 'ios'
+ 40         #raise ArgumentError, "Cannot find a platform for #{node}" unless platform
+
+ 49         version = '10.1'
+ 50         #raise ArgumentError, "Cannot find a version for #{node}" unless version
