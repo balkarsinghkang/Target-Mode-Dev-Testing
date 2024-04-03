@@ -19,7 +19,7 @@ action :set do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     # binding.pry
     # src = backend.run_command('sh run')
-    backend.run_command('sh run', debug: true)
+    backend.run_command('sh run')
 
     # cfg = OpenWRT::Config::Network.new(content: src)
     # ruby_block 'always_updated' do
@@ -30,6 +30,10 @@ action :set do
     # cisco.cmd("banner motd # #{new_resource.motd} #")
     # cisco.cmd('exit')
     # output = cisco.run
+    backend.run_command('config t')
+    backend.run_command("echo '#{new_resource.motd}' > /etc/motd")
+    backend.run_command('exit')
+    # end
 
     # Chef::Log.info('This resource is always updated')
   end
