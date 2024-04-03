@@ -33,8 +33,10 @@ load_current_value do |current_value|
   
     # end
   end
+puts "Src:"
+  puts src 
 
-  binding.pry
+  # binding.pry
 
 action :set do
   converge_if_changed do
