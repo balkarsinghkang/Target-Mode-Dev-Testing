@@ -16,7 +16,7 @@ property :motd, String, required: true
 
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    src = backend.run_command('show running-config | include motd')
+    src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
     binding.pry
   
     # if cfg.interfaces.has_key?(new_resource.name)
