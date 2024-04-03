@@ -42,8 +42,9 @@ action :set do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
 
-    # binding.pry
+     binding.pry
     # src = backend.run_command('sh run')
+
     if new_resource.motd != src 
     backend.run_command('show running-config | include motd')
 
