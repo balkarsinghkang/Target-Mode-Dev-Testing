@@ -15,7 +15,7 @@ property :target, String, name_property: true
 property :motd, String, required: true
 
 load_current_value do |new_resource|
-    backend = TargetModeHelper.new(__transport_connection)
+    backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     src = backend.run_command('show running-config | include motd')
     binding.pry
   
