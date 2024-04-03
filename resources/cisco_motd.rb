@@ -13,13 +13,13 @@ property :motd, String
 
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    curr_motd = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
+    motd = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
   end
 
 
 action :set do
-    binding.pry
-  converge_if_changed do
+ #   binding.pry
+  converge_if_changed :motd do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
     backend.run_command('config t')
