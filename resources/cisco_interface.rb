@@ -12,7 +12,7 @@ property :enabled, String, required: true
 
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    int_cfg = backend.run_command("show running-config inteface #{new_resource.interface}")
+    int_cfg = JSON.parse(backend.run_command("show running-config interface #{new_resource.interface}"))
     binding.pry
   end
 
