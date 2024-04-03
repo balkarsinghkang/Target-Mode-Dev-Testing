@@ -33,16 +33,18 @@ load_current_value do |current_value|
   
     # end
   end
-puts "Src:"
-  puts src 
+
 
   # binding.pry
 
 action :set do
   converge_if_changed do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
+    src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
+
     # binding.pry
     # src = backend.run_command('sh run')
+    if new_resource.motd != src 
     backend.run_command('show running-config | include motd')
 
     # cfg = OpenWRT::Config::Network.new(content: src)
@@ -58,10 +60,10 @@ action :set do
     backend.run_command("banner motd # #{new_resource.motd} #")
     backend.run_command('exit')
     backend.run_command('wr mem')
-    # end
+     end
 
     # Chef::Log.info('This resource is always updated')
-  end if new_resource.motd == src
-  # updated_by_last_action true
+  end 
+    # updated_by_last_action true
   # end
 end
