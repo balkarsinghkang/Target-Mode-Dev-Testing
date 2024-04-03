@@ -14,7 +14,7 @@ property :target, String, name_property: true
 # property :enable_password, String, required: true
 property :motd, String, required: true
 
-load_current_value do |new_resource|
+load_current_value do |current_value|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
     binding.pry
