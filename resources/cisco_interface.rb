@@ -8,7 +8,7 @@ default_action :set
 property :interface, String, name_property: true
 property :target, String, required: true
 property :description, String
-property :enabled, String, required: true
+property :enabled, Bool, required: true
 
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
