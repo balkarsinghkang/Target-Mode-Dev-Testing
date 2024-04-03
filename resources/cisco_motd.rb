@@ -33,6 +33,7 @@ action :set do
     backend.run_command('config t')
     backend.run_command("echo '#{new_resource.motd}' > /etc/motd")
     backend.run_command('exit')
+    backend.run_command('wr mem')
     # end
 
     # Chef::Log.info('This resource is always updated')

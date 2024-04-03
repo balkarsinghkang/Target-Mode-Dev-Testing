@@ -7,7 +7,7 @@ https://supermarket.chef.io/cookbooks/cisco-cookbook
 login with admin
 enable
 conf t
-username admin2 privilege 7 secret  Training
+username admin2 privilege 15 secret Training
 aaa new-model
 !
 !
