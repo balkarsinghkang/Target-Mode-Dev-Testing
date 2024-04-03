@@ -24,12 +24,16 @@ action :set do
     # cfg = OpenWRT::Config::Network.new(content: src)
     # ruby_block 'always_updated' do
     #  block do
-    cisco = Cisco::Base.new(host: new_resource.target, user: new_resource.username, password: new_resource.password, transport: :ssh)
-    cisco.enable(new_resource.enable_password)
-    cisco.cmd('config t')
-    cisco.cmd("banner motd # #{new_resource.motd} #")
-    cisco.cmd('exit')
-    output = cisco.run
+    # cisco = Cisco::Base.new(host: new_resource.target, user: new_resource.username, password: new_resource.password, transport: :ssh)
+    # cisco.enable(new_resource.enable_password)
+    # cisco.cmd('config t')
+    # cisco.cmd("banner motd # #{new_resource.motd} #")
+    # cisco.cmd('exit')
+    # output = cisco.run
+    backend.run_command('config t')
+    backend.run_command("echo '#{new_resource.motd}' > /etc/motd")
+    backend.run_command('exit')
+    # end
 
     # Chef::Log.info('This resource is always updated')
   end
