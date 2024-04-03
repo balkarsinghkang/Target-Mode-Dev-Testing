@@ -6,9 +6,9 @@
 
 # require 'pry'
 
-# chef_gem 'cisco_node_utils' do
-#   source '/root/cisco_node_utils-2.1.1.gem'
-# end
+chef_gem 'cisco_node_utils' do
+  source '/root/cisco_node_utils-2.1.1.gem'
+end
 
 # binding.pry
 
