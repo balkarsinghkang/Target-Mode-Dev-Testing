@@ -18,6 +18,3 @@ cisco_interface 'Gi1/0/10' do
   description "Configured with recipe"
   enabled true # enabled true mean no shutdown; enabled false mean shutdown
 end
-
-  motd 'Configured via Chef recipe Balkar3'
-end
