@@ -39,7 +39,7 @@ load_current_value do |current_value|
 action :set do
   converge_if_changed do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    binding.pry
+    # binding.pry
     # src = backend.run_command('sh run')
     backend.run_command('show running-config | include motd')
 
