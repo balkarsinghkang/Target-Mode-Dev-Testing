@@ -1,6 +1,4 @@
-
 require_relative '../libraries/TargetModeHelpers' unless defined?(TargetModeHelpers::TargetModeHelper)
-require 'pry'
 
 resource_name :cisco_motd
 provides :cisco_motd, target_mode: true
