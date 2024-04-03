@@ -12,7 +12,8 @@ property :target, String, name_property: true
 # property :username, String, required: true
 # property :password, String, required: true
 # property :enable_password, String, required: true
-property :motd, String, required: true
+property :motd, String
+#, required: true
 
 load_current_value do |current_value|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
