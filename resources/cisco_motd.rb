@@ -59,6 +59,6 @@ action :set do
 
     # Chef::Log.info('This resource is always updated')
   end
-  # updated_by_last_action true
+  updated_by_last_action true
   # end
 end
