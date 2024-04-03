@@ -31,7 +31,7 @@ action :set do
     # cisco.cmd('exit')
     # output = cisco.run
     backend.run_command('config t')
-    backend.run_command("echo '#{new_resource.motd}' > /etc/motd")
+    backend.run_command("banner motd # #{new_resource.motd} #")
     backend.run_command('exit')
     backend.run_command('wr mem')
     # end
