@@ -34,6 +34,7 @@ load_current_value do |current_value|
     # end
   end
 
+  binding.pry
 
 action :set do
   converge_if_changed do
@@ -58,7 +59,7 @@ action :set do
     # end
 
     # Chef::Log.info('This resource is always updated')
-  end
-  updated_by_last_action true
+  end if new_resource.motd == src
+  # updated_by_last_action true
   # end
 end
