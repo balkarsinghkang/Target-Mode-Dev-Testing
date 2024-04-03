@@ -13,6 +13,7 @@ property :motd, String
 
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
+    puts self.inspect
     motd backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
   end
 
