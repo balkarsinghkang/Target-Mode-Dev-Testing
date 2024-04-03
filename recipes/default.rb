@@ -16,5 +16,5 @@ cisco_motd '192.168.240.5' do
   # username 'admin'
   # password 'Training'
   # enable_password 'Training'
-  motd 'Configured via Chef recipe Balkar'
+  motd 'Configured via Chef recipe Balkar2'
 end
