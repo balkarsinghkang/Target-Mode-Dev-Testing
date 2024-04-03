@@ -16,7 +16,6 @@ load_current_value do |new_resource|
     motd = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
   end
 
-
 action :set do
  #   binding.pry
   converge_if_changed :motd do
