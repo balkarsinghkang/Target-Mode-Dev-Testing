@@ -1,5 +1,6 @@
 require_relative '../libraries/TargetModeHelpers' unless defined?(TargetModeHelpers::TargetModeHelper)
 require 'pry'
+require 'json'
 resource_name :cisco_interfdace
 provides :cisco_interface, target_mode: true
 unified_mode true
