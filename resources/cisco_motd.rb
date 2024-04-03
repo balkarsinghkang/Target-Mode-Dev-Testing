@@ -20,7 +20,7 @@ action :set do
  #   binding.pry
   converge_if_changed :motd do
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
-    src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
+    # src = backend.run_command('show running-config | include motd').scan(/banner motd \^C (.*) /).flatten.first
     backend.run_command('config t')
     backend.run_command("banner motd # #{new_resource.motd} #")
     backend.run_command('exit')
