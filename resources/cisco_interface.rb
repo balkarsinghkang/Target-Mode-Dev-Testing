@@ -18,8 +18,8 @@ def string_not_nil?(str)
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     int_cfg = backend.run_command("show running-config interface #{new_resource.interface}")
-    binding.pry
-    description int_cfg.split("\r\n").find { |item| item.lstrip.start_with?("description")}.lstrip.sub(/description "(.*?)"/,'')
+    #binding.pry
+    description(int_cfg.split("\r\n").find { |item| item.lstrip.start_with?("description")}.lstrip.gsub(/\bdescription\b/i,'').lstrip)
     shutdown(string_not_nil?(int_cfg.split("\r\n").find { | str | str.match(/\s*shutdown/)}))
   end
 
