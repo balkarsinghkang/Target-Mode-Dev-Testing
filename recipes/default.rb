@@ -12,7 +12,7 @@ cisco_motd '192.168.240.5' do
   motd 'Configured via Chef recipe Balkar3'
 end
 
-cisco_interface 'Gi1/0/10' do
+cisco_interface 'Configuring Gi1/0/10' do
   target '192.168.240.5'
   interface 'Gi1/0/10'
   description "Configured with recipe"
