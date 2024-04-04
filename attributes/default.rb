@@ -1,1 +1,1 @@
-default['platform'] = 'Cisco IOS'
+overwrite['platform'] = 'Cisco IOS'
