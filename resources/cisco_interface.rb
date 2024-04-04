@@ -9,7 +9,7 @@ default_action :set
 property :interface, String, name_property: true
 property :target, String, required: true
 property :description, String
-property :shutdown, Boolean, required: true
+property :shutdown, [true, false], required: true
 
 def string_not_nil?(str)
     return str != nil
