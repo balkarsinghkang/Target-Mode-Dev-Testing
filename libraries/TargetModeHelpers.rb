@@ -52,11 +52,9 @@ module TargetModeHelpers
       unix_cmd = format("echo '%<base64>s' | base64 --decode > %<file>s", base64: encoded, file: file)
       @backend.run_command(unix_cmd).stdout
     end
-    
-    def string_not_nil?(str)
-      return str != nil
-    end
-
+  end
+  def string_not_nil?(str)
+    return str != nil
   end
 end
 
