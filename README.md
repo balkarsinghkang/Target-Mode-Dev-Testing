@@ -1,8 +1,13 @@
+Documents:
+
 Target Mode Link: https://chefio.atlassian.net/wiki/spaces/~5ec4d1fdde8fe30c44a98c26/pages/2864381992/Target+Mode
 
 https://www.rubydoc.info/gems/cisco_node_utils/2.1.0
 https://github.com/cisco/cisco-network-chef-cookbook
 https://supermarket.chef.io/cookbooks/cisco-cookbook
+
+Pre-requisites:
+Configure cisco account must be configured with enable access. The following command used to setup admin account.
 
 login with admin
 enable
