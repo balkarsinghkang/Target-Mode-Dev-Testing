@@ -33,7 +33,8 @@ action :update do
   end
 
   converge_if_changed :shutdown do
-    backend.run_command("shutdown") # if new_resource.shutdown == true
+    backend.run_command("shutdown") if new_resource.shutdown == true
+    backend.run_command("no shutdown") if new_resource.shutdown == false
   end
 
   backend.run_command('exit')
