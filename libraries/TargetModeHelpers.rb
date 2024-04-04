@@ -53,9 +53,7 @@ module TargetModeHelpers
       @backend.run_command(unix_cmd).stdout
     end
   end
-  def string_not_nil?(str)
-    return str != nil
-  end
+
 end
 
 #
