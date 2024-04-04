@@ -15,6 +15,6 @@ end
 cisco_interface 'Gi1/0/10' do
   target '192.168.240.5'
   interface 'Gi1/0/10'
-  description "Configured with recipe1"
+  description "Configured with recipe"
   shutdown false 
 end
