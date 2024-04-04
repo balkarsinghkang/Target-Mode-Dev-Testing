@@ -9,12 +9,12 @@ default_action :set
 property :interface, String, name_property: true
 property :target, String, required: true
 property :description, String
-property :shutdown, String, required: true
+property :shutdown, Boolean, required: true
 
 def string_not_nil?(str)
     return str != nil
   end
-  
+
 load_current_value do |new_resource|
     backend = TargetModeHelpers::TargetModeHelper.new(__transport_connection)
     int_cfg = backend.run_command("show running-config interface #{new_resource.interface}")

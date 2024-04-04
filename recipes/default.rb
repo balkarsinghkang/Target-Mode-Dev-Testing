@@ -16,5 +16,5 @@ cisco_interface 'Gi1/0/10' do
   target '192.168.240.5'
   interface 'Gi1/0/10'
   description "Configured with recipe"
-  shutdown 'true' # enabled true mean no shutdown; enabled false mean shutdown
+  shutdown true 
 end
